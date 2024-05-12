@@ -102,6 +102,9 @@
     <EmbeddedResource Include="frmQLChiNhanh.resx">
       <DependentUpon>frmQLChiNhanh.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmQLKhachHang.resx">
+      <DependentUpon>frmQLKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyNV.resx">
       <DependentUpon>frmQuanLyNV.cs</DependentUpon>
     </EmbeddedResource>

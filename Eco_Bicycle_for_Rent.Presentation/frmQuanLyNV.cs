@@ -16,5 +16,10 @@ namespace Eco_Bicycle_for_Rent.Presentation
         {
             InitializeComponent();
         }
+
+        private void frmQuanLyNV_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
