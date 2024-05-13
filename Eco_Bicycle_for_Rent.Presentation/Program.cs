@@ -18,7 +18,7 @@ namespace Eco_Bicycle_for_Rent.Presentation
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmQLChiNhanh());
+            Application.Run(new frmDSTramThueXe());
         }
     }
 }

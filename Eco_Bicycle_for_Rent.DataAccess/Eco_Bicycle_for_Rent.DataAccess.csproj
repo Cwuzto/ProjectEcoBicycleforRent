@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="ChiNhanhDL.cs" />
     <Compile Include="DataProvider.cs" />
+    <Compile Include="DSTramTaiChiNhanhDL.cs" />
     <Compile Include="KhachHangDL.cs" />
     <Compile Include="LoaiXeDL.cs" />
     <Compile Include="NhanVienDL.cs" />
