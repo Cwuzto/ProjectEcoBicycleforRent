@@ -41,9 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiNhanhDL.cs" />
     <Compile Include="DataProvider.cs" />
+    <Compile Include="KhachHangDL.cs" />
+    <Compile Include="LoaiXeDL.cs" />
     <Compile Include="NhanVienDL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TramXeDL.cs" />
+    <Compile Include="XeDapDL.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
