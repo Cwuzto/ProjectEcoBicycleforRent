@@ -8,20 +8,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
 
-namespace DoAnPTTKOOP
+namespace Eco_Bicycle_for_Rent.Presentation
 {
-    public partial class frmQLChiNhanh : Form
+    public partial class frmQLLoaiXe : Form
     {
-        ChiNhanhBUS cnBus=new ChiNhanhBUS();
-        public frmQLChiNhanh()
+        LoaiXeBUS loaixeBus=new LoaiXeBUS();
+        public frmQLLoaiXe()
         {
             InitializeComponent();
         }
 
-        private void frmQLChiNhanh_Load(object sender, EventArgs e)
+        private void frmQLLoaiXe_Load(object sender, EventArgs e)
         {
-            dgvQLChiNhanh.DataSource = cnBus.LayDSChiNhanh();
+            dgvDS.DataSource = loaixeBus.LayDSLoaiXe();
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -30,15 +31,28 @@ namespace DoAnPTTKOOP
         }
         private void load_data()
         {
-            ChiNhanhBUS cnBus = new ChiNhanhBUS();
-            dgvQLChiNhanh.DataSource = cnBus.LayDSChiNhanh();
+            LoaiXeBUS loaixeBus = new LoaiXeBUS();
+            dgvDS.DataSource = loaixeBus.LayDSLoaiXe();
         }
         private bool validateData()
         {
-            errorProvider1.SetError(txtTenCN, (txtTenCN.Text == "") ? "Hãy nhập tên chi nhánh" : "");
-            errorProvider2.SetError(txtDiaChi, (txtDiaChi.Text == "") ? "Hãy nhập địa chỉ chi nhánh" : "");
-            return (txtTenCN.Text != "" && txtDiaChi.Text != "");
+            errorProvider1.SetError(txtLoaiTenXD, (txtLoaiTenXD.Text == "") ? "Hãy nhập tên loại xe đạp" : "");
+            errorProvider2.SetError(txtDonGia, (txtDonGia.Text == "") ? "Hãy nhập đơn giá cho loại xe" : "");
+            return (txtLoaiTenXD.Text != "" && txtDonGia.Text != "");
         }
+        private string idloaixe;
+        private void dgvDS_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                DataGridViewRow row = dgvDS.Rows[e.RowIndex];
+                idloaixe = row.Cells["MaLX"].Value.ToString();
+                txtLoaiTenXD.Text = row.Cells["TenLoai"].Value.ToString();
+                txtDonGia.Text = row.Cells["DonGiaChoThue"].Value.ToString();
+                nbrSoluong.Value = Convert.ToInt32(row.Cells["SoLuong"].Value.ToString());
+            }
+        }
+
         private void btnLuu_Click(object sender, EventArgs e)
         {
             if (!validateData())
@@ -48,7 +62,7 @@ namespace DoAnPTTKOOP
             }
             try
             {
-                if (cnBus.AddChiNhanh(txtTenCN.Text, txtDiaChi.Text))
+                if (loaixeBus.AddLoaiXe(txtLoaiTenXD.Text, Convert.ToInt32(nbrSoluong.Value), Convert.ToInt32(txtDonGia.Text)))
                 {
                     load_data();
                     MessageBox.Show("Thêm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -64,12 +78,12 @@ namespace DoAnPTTKOOP
         {
             if (!validateData())
             {
-                MessageBox.Show("Hãy chọn một chi nhánh", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Hãy chọn một loại xe", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             try
             {
-                if (cnBus.UpdateChiNhanh(txtTenCN.Text, txtDiaChi.Text, Convert.ToInt32(idCN)))
+                if (loaixeBus.UpdateLoaiXe(txtLoaiTenXD.Text,Convert.ToInt32(nbrSoluong.Value),Convert.ToInt32(txtDonGia.Text), Convert.ToInt32(idloaixe)))
                 {
 
                     MessageBox.Show("Sửa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -86,25 +100,14 @@ namespace DoAnPTTKOOP
         {
             if (!validateData())
             {
-                MessageBox.Show("Hãy chọn một chi nhánh!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Hãy chọn một loại xe!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (cnBus.DeleteChiNhanh(idCN))
+            if (loaixeBus.DeleteLoaiXe(idloaixe))
             {
                 MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 load_data();
                 return;
-            }
-        }
-        private string idCN;
-        private void dgvQLChiNhanh_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
-            {
-                DataGridViewRow row = dgvQLChiNhanh.Rows[e.RowIndex];
-                idCN = row.Cells["MaCN"].Value.ToString();
-                txtTenCN.Text = row.Cells["TenCN"].Value.ToString();
-                txtDiaChi.Text = row.Cells["DiaChi"].Value.ToString();
             }
         }
     }

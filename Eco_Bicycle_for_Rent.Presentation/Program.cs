@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DoAnPTTKOOP;
+using Quản_lý_Sản_Phẩm;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +18,7 @@ namespace Eco_Bicycle_for_Rent.Presentation
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmQuanLyNV());
+            Application.Run(new frmQLChiNhanh());
         }
     }
 }

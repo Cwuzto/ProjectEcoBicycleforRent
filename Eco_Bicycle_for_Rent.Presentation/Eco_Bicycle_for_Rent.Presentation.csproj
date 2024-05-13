@@ -73,6 +73,18 @@
     <Compile Include="frmQLKhachHang.Designer.cs">
       <DependentUpon>frmQLKhachHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmQLLoaiXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLLoaiXe.Designer.cs">
+      <DependentUpon>frmQLLoaiXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLTramXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLTramXe.Designer.cs">
+      <DependentUpon>frmQLTramXe.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmQuanLyNV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +116,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmQLKhachHang.resx">
       <DependentUpon>frmQLKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLLoaiXe.resx">
+      <DependentUpon>frmQLLoaiXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLTramXe.resx">
+      <DependentUpon>frmQLTramXe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyNV.resx">
       <DependentUpon>frmQuanLyNV.cs</DependentUpon>

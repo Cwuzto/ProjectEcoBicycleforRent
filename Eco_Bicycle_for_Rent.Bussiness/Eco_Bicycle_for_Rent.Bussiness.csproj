@@ -41,7 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiNhanhBUS.cs" />
+    <Compile Include="KhachHangBUS.cs" />
+    <Compile Include="LoaiXeBUS.cs" />
+    <Compile Include="NhanVienBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TramXeBUS.cs" />
+    <Compile Include="XeDapBUS.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Eco_Bicycle_for_Rent.DataAccess\Eco_Bicycle_for_Rent.DataAccess.csproj">
