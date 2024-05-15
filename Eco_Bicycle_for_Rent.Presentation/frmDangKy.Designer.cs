@@ -302,7 +302,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Pink;
-            this.ClientSize = new System.Drawing.Size(939, 625);
+            this.ClientSize = new System.Drawing.Size(800, 437);
             this.Controls.Add(this.groupboxNganHang);
             this.Controls.Add(this.groupboxTienMat);
             this.Controls.Add(this.btnBack);
