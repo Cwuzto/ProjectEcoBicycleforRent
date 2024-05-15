@@ -89,7 +89,10 @@ namespace Eco_Bicycle_for_Rent.Presentation
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Hide();
+            frmHomePage frmHomePage = new frmHomePage();
+            frmHomePage.ShowDialog();
+            this.Close();
         }
     }
 }

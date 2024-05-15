@@ -22,6 +22,9 @@ namespace Eco_Bicycle_for_Rent.Presentation
 
         private void btnExit_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            frmHomePage frmHomePage = new frmHomePage();
+            frmHomePage.ShowDialog();
             this.Close();
         }
 
