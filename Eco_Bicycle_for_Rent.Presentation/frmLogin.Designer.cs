@@ -42,6 +42,7 @@
             this.txtPassword = new ZBobb.AlphaBlendTextBox();
             this.txtUsername = new ZBobb.AlphaBlendTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogin)).BeginInit();
@@ -54,8 +55,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightPink;
-            this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.btnLogin);
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.panel5);
@@ -64,6 +65,7 @@
             this.panel1.Controls.Add(this.txtPassword);
             this.panel1.Controls.Add(this.txtUsername);
             this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.btnExit);
             this.panel1.Location = new System.Drawing.Point(-2, -3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(816, 440);
@@ -73,9 +75,9 @@
             // 
             this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExit.Image = global::Eco_Bicycle_for_Rent.Presentation.Properties.Resources.Exit;
-            this.btnExit.Location = new System.Drawing.Point(87, 338);
+            this.btnExit.Location = new System.Drawing.Point(87, 302);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(278, 99);
+            this.btnExit.Size = new System.Drawing.Size(278, 116);
             this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnExit.TabIndex = 16;
             this.btnExit.TabStop = false;
@@ -85,9 +87,9 @@
             // 
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.Image = global::Eco_Bicycle_for_Rent.Presentation.Properties.Resources.LOGIN__3_;
-            this.btnLogin.Location = new System.Drawing.Point(87, 225);
+            this.btnLogin.Location = new System.Drawing.Point(87, 211);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(278, 99);
+            this.btnLogin.Size = new System.Drawing.Size(278, 119);
             this.btnLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnLogin.TabIndex = 15;
             this.btnLogin.TabStop = false;
@@ -216,6 +218,17 @@
             this.panel2.Size = new System.Drawing.Size(812, 22);
             this.panel2.TabIndex = 5;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DimGray;
+            this.label3.Location = new System.Drawing.Point(144, 417);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(152, 21);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "CopyRight @2024";
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -255,6 +268,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox btnLogin;
         private System.Windows.Forms.PictureBox btnExit;
+        private System.Windows.Forms.Label label3;
     }
 }
 
