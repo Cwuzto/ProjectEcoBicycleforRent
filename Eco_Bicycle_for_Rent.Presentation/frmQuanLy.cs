@@ -14,6 +14,7 @@ namespace Eco_Bicycle_for_Rent.Presentation
 {
     public partial class frmQuanLy : Form
     {
+        private Form currentChildForm;
         public frmQuanLy()
         {
             InitializeComponent();
@@ -21,11 +22,26 @@ namespace Eco_Bicycle_for_Rent.Presentation
 
         private void ShowChildFormInPanel(Form childForm)
         {
+            // Nếu form con hiện tại là form cần mở, không làm gì cả
+
+            if (currentChildForm != null && currentChildForm.GetType() == childForm.GetType())
+            {
+                return;
+            }
+
+            if (currentChildForm != null)
+            {
+                currentChildForm.Close();
+            }
             // Thiết lập MDI parent của child form là panel
+            // Thiết lập form con mới
+            currentChildForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
             panelQL.Controls.Add(childForm);
+            panelQL.Tag = childForm;
+            childForm.BringToFront();
             childForm.Show();
         }
 

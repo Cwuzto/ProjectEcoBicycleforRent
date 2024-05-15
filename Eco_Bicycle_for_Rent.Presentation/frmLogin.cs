@@ -93,11 +93,14 @@ namespace Eco_Bicycle_for_Rent.Presentation
 
         private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
         {
-            e.Handled = true; // Ngăn chặn kí tự Enter được hiển thị trong ô mật khẩu
-                              // Gọi phương thức xử lý đăng nhập
-            btnLogin_Click(sender, e);// Gọi phương thức xử lý đăng nhập khi nhấn Enter
-                                      // Xóa kí tự xuống dòng (\n) từ chuỗi mật khẩu
-            txtPassword.Text = txtPassword.Text.Replace("\n", ""); 
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true; // Ngăn chặn kí tự Enter được hiển thị trong ô mật khẩu
+                // Gọi phương thức xử lý đăng nhập
+                btnLogin_Click(sender, e); // Gọi phương thức xử lý đăng nhập khi nhấn Enter
+                // Xóa kí tự xuống dòng (\n) từ chuỗi mật khẩu
+                txtPassword.Text = txtPassword.Text.Replace("\n", "");
+            }
         }
     }
 }
