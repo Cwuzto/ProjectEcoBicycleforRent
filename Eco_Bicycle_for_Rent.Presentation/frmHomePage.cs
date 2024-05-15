@@ -19,8 +19,10 @@ namespace Eco_Bicycle_for_Rent.Presentation
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            this.Hide();
             frmLogin frmLogin = new frmLogin(); 
             frmLogin.ShowDialog();
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
