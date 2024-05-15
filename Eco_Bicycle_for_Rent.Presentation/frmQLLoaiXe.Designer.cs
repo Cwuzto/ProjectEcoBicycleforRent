@@ -53,7 +53,7 @@
             this.btnSua.BackColor = System.Drawing.Color.YellowGreen;
             this.btnSua.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSua.Location = new System.Drawing.Point(491, 578);
+            this.btnSua.Location = new System.Drawing.Point(491, 534);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(106, 46);
             this.btnSua.TabIndex = 71;
@@ -66,7 +66,7 @@
             this.btnXoa.BackColor = System.Drawing.Color.Red;
             this.btnXoa.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnXoa.Location = new System.Drawing.Point(770, 578);
+            this.btnXoa.Location = new System.Drawing.Point(770, 534);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(106, 46);
             this.btnXoa.TabIndex = 70;
@@ -79,7 +79,7 @@
             this.btnLuu.BackColor = System.Drawing.Color.Blue;
             this.btnLuu.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnLuu.Location = new System.Drawing.Point(225, 578);
+            this.btnLuu.Location = new System.Drawing.Point(225, 534);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(106, 46);
             this.btnLuu.TabIndex = 69;
@@ -90,11 +90,11 @@
             // dgvDS
             // 
             this.dgvDS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDS.Location = new System.Drawing.Point(63, 231);
+            this.dgvDS.Location = new System.Drawing.Point(193, 241);
             this.dgvDS.Name = "dgvDS";
             this.dgvDS.RowHeadersWidth = 51;
             this.dgvDS.RowTemplate.Height = 24;
-            this.dgvDS.Size = new System.Drawing.Size(957, 309);
+            this.dgvDS.Size = new System.Drawing.Size(696, 250);
             this.dgvDS.TabIndex = 68;
             this.dgvDS.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDS_CellClick);
             // 
@@ -175,7 +175,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1082, 660);
+            this.ClientSize = new System.Drawing.Size(1082, 598);
             this.Controls.Add(this.nbrSoluong);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnSua);

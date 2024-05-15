@@ -23,6 +23,7 @@ namespace Eco_Bicycle_for_Rent.Presentation
         private void frmQLLoaiXe_Load(object sender, EventArgs e)
         {
             dgvDS.DataSource = loaixeBus.LayDSLoaiXe();
+            dgvDS.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void btnThoat_Click(object sender, EventArgs e)

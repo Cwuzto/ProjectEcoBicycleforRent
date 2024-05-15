@@ -45,6 +45,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.btnBack = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtEmail
@@ -225,12 +226,24 @@
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.button1.Font = new System.Drawing.Font("Montserrat SemiBold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(666, 338);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(189, 67);
+            this.button1.TabIndex = 60;
+            this.button1.Text = "Xác nhận";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // frmThongTinCaNhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(1044, 439);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label1);
@@ -276,5 +289,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button button1;
     }
 }
