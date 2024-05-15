@@ -23,7 +23,7 @@ namespace Quản_lý_Sản_Phẩm
 
         private void frmDMKhachHang_Load(object sender, EventArgs e)
         {
-            dgvQLKhachHang.DataSource = khBus.LayDSKH();
+            dgvQLKH.DataSource = khBus.LayDSKH();
             cmbLoaiKH.DataSource=khBus.GetDSLoaiKH();
             cmbLoaiKH.DisplayMember= "TenLKH";
             cmbLoaiKH.ValueMember = "MaLKH";
@@ -31,7 +31,7 @@ namespace Quản_lý_Sản_Phẩm
         private void load_data()
         {
             KhachHangBUS khBus = new KhachHangBUS();
-            dgvQLKhachHang.DataSource = khBus.LayDSKH();
+            dgvQLKH.DataSource = khBus.LayDSKH();
         }
         private bool validateData()
         {
@@ -92,7 +92,7 @@ namespace Quản_lý_Sản_Phẩm
         {
             if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
             {
-                DataGridViewRow row = dgvQLKhachHang.Rows[e.RowIndex];
+                DataGridViewRow row = dgvQLKH.Rows[e.RowIndex];
                 idkh = row.Cells["MaKH"].Value.ToString();
                 txtTenKhachHang.Text = row.Cells["HoTen"].Value.ToString();
                 txtTrangThai.Text = row.Cells["TrangThaiThe"].Value.ToString();

@@ -38,7 +38,6 @@
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
-            this.btnThoat = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.cmbCN = new System.Windows.Forms.ComboBox();
@@ -52,55 +51,55 @@
             // 
             // txtTrangThai
             // 
-            this.txtTrangThai.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTrangThai.Location = new System.Drawing.Point(734, 118);
+            this.txtTrangThai.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTrangThai.Location = new System.Drawing.Point(743, 96);
             this.txtTrangThai.Name = "txtTrangThai";
-            this.txtTrangThai.Size = new System.Drawing.Size(284, 34);
+            this.txtTrangThai.Size = new System.Drawing.Size(284, 36);
             this.txtTrangThai.TabIndex = 53;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(569, 122);
+            this.label4.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(578, 100);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 29);
+            this.label4.Size = new System.Drawing.Size(142, 32);
             this.label4.TabIndex = 52;
             this.label4.Text = "Trạng Thái:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Montserrat Medium", 22.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(410, 22);
+            this.label1.Location = new System.Drawing.Point(419, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(306, 38);
+            this.label1.Size = new System.Drawing.Size(359, 51);
             this.label1.TabIndex = 51;
             this.label1.Text = "QUẢN LÝ XE ĐẠP";
             // 
             // txtTenXD
             // 
-            this.txtTenXD.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenXD.Location = new System.Drawing.Point(219, 115);
+            this.txtTenXD.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenXD.Location = new System.Drawing.Point(228, 93);
             this.txtTenXD.Name = "txtTenXD";
-            this.txtTenXD.Size = new System.Drawing.Size(313, 34);
+            this.txtTenXD.Size = new System.Drawing.Size(313, 36);
             this.txtTenXD.TabIndex = 48;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(63, 118);
+            this.label3.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(72, 96);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(149, 29);
+            this.label3.Size = new System.Drawing.Size(150, 32);
             this.label3.TabIndex = 46;
             this.label3.Text = "Tên Xe Đạp:";
             // 
             // dgvDS
             // 
             this.dgvDS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDS.Location = new System.Drawing.Point(61, 234);
+            this.dgvDS.Location = new System.Drawing.Point(70, 229);
             this.dgvDS.Name = "dgvDS";
             this.dgvDS.RowHeadersWidth = 51;
             this.dgvDS.RowTemplate.Height = 24;
@@ -111,9 +110,9 @@
             // btnLuu
             // 
             this.btnLuu.BackColor = System.Drawing.Color.Blue;
-            this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnLuu.Location = new System.Drawing.Point(93, 564);
+            this.btnLuu.Location = new System.Drawing.Point(155, 559);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(106, 46);
             this.btnLuu.TabIndex = 55;
@@ -124,9 +123,9 @@
             // btnSua
             // 
             this.btnSua.BackColor = System.Drawing.Color.YellowGreen;
-            this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSua.Location = new System.Drawing.Point(359, 564);
+            this.btnSua.Location = new System.Drawing.Point(522, 559);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(106, 46);
             this.btnSua.TabIndex = 57;
@@ -137,9 +136,9 @@
             // btnXoa
             // 
             this.btnXoa.BackColor = System.Drawing.Color.Red;
-            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnXoa.Location = new System.Drawing.Point(638, 564);
+            this.btnXoa.Location = new System.Drawing.Point(892, 559);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(106, 46);
             this.btnXoa.TabIndex = 56;
@@ -147,55 +146,42 @@
             this.btnXoa.UseVisualStyleBackColor = false;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
-            // btnThoat
-            // 
-            this.btnThoat.BackColor = System.Drawing.Color.SaddleBrown;
-            this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnThoat.Location = new System.Drawing.Point(880, 564);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(106, 46);
-            this.btnThoat.TabIndex = 62;
-            this.btnThoat.Text = "&Thoát";
-            this.btnThoat.UseVisualStyleBackColor = false;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(63, 183);
+            this.label2.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(72, 161);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(152, 29);
+            this.label2.Size = new System.Drawing.Size(156, 32);
             this.label2.TabIndex = 63;
             this.label2.Text = "Loại Xe Đạp:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(569, 183);
+            this.label5.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(578, 161);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(131, 29);
+            this.label5.Size = new System.Drawing.Size(145, 32);
             this.label5.TabIndex = 64;
             this.label5.Text = "Chi Nhánh:";
             // 
             // cmbCN
             // 
-            this.cmbCN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCN.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCN.FormattingEnabled = true;
-            this.cmbCN.Location = new System.Drawing.Point(736, 183);
+            this.cmbCN.Location = new System.Drawing.Point(745, 161);
             this.cmbCN.Name = "cmbCN";
-            this.cmbCN.Size = new System.Drawing.Size(281, 30);
+            this.cmbCN.Size = new System.Drawing.Size(281, 40);
             this.cmbCN.TabIndex = 65;
             // 
             // cmbLoaiXe
             // 
-            this.cmbLoaiXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbLoaiXe.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbLoaiXe.FormattingEnabled = true;
-            this.cmbLoaiXe.Location = new System.Drawing.Point(221, 183);
+            this.cmbLoaiXe.Location = new System.Drawing.Point(230, 161);
             this.cmbLoaiXe.Name = "cmbLoaiXe";
-            this.cmbLoaiXe.Size = new System.Drawing.Size(313, 30);
+            this.cmbLoaiXe.Size = new System.Drawing.Size(313, 40);
             this.cmbLoaiXe.TabIndex = 66;
             // 
             // errorProvider1
@@ -215,7 +201,6 @@
             this.Controls.Add(this.cmbCN);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnLuu);
@@ -248,7 +233,6 @@
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cmbCN;
