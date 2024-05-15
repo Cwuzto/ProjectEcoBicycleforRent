@@ -46,6 +46,7 @@
     <Compile Include="DSTramTaiChiNhanhDL.cs" />
     <Compile Include="KhachHangDL.cs" />
     <Compile Include="LoaiXeDL.cs" />
+    <Compile Include="LoginDL.cs" />
     <Compile Include="NhanVienDL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TramXeDL.cs" />

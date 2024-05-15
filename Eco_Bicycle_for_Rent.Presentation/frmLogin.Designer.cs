@@ -91,6 +91,7 @@
             this.btnLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnLogin.TabIndex = 15;
             this.btnLogin.TabStop = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // pictureBox3
             // 
@@ -188,6 +189,8 @@
             this.txtPassword.Size = new System.Drawing.Size(358, 39);
             this.txtPassword.TabIndex = 10;
             this.txtPassword.Text = "Password";
+            this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);
+            this.txtPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPassword_KeyPress);
             // 
             // txtUsername
             // 
@@ -202,6 +205,8 @@
             this.txtUsername.Size = new System.Drawing.Size(358, 39);
             this.txtUsername.TabIndex = 7;
             this.txtUsername.Text = "Username";
+            this.txtUsername.Enter += new System.EventHandler(this.txtUsername_Enter);
+            this.txtUsername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsername_KeyPress);
             // 
             // panel2
             // 

@@ -40,10 +40,6 @@ namespace Eco_Bicycle_for_Rent.Presentation
             NhanVienBUS nvBUS = new NhanVienBUS();
             dgvDanhSach.DataSource = nvBUS.LayDSNhanVien();
         }
-        private void btnThoat_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
 
         private void btnRandom_Click(object sender, EventArgs e)
         {

@@ -36,6 +36,7 @@
             this.DiaChiTram = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenCN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DiaChiCN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnBack = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSTram)).BeginInit();
             this.SuspendLayout();
@@ -43,38 +44,38 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Montserrat SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
             this.label1.Location = new System.Drawing.Point(350, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(691, 36);
+            this.label1.Size = new System.Drawing.Size(702, 41);
             this.label1.TabIndex = 30;
             this.label1.Text = "DANH SÁCH CÁC TRẠM TẠI CÁC CHI NHÁNH";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(445, 119);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(141, 29);
+            this.label3.Size = new System.Drawing.Size(145, 32);
             this.label3.TabIndex = 31;
             this.label3.Text = "Chi Nhánh:";
             // 
             // cmbCN
             // 
-            this.cmbCN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCN.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCN.FormattingEnabled = true;
             this.cmbCN.Location = new System.Drawing.Point(622, 119);
             this.cmbCN.Name = "cmbCN";
-            this.cmbCN.Size = new System.Drawing.Size(315, 30);
+            this.cmbCN.Size = new System.Drawing.Size(315, 40);
             this.cmbCN.TabIndex = 32;
             this.cmbCN.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dgvDSTram);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(239, 189);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(915, 347);
@@ -123,16 +124,31 @@
             this.DiaChiCN.ReadOnly = true;
             this.DiaChiCN.Width = 250;
             // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnBack.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(-1, -1);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(130, 38);
+            this.btnBack.TabIndex = 34;
+            this.btnBack.Text = "Quay lại";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // frmDSTramThueXe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1345, 548);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.cmbCN);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmDSTramThueXe";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmDSTramThueXe";
             this.Load += new System.EventHandler(this.frmDSTramThueXe_Load);
             this.groupBox1.ResumeLayout(false);
@@ -152,5 +168,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn DiaChiTram;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenCN;
         private System.Windows.Forms.DataGridViewTextBoxColumn DiaChiCN;
+        private System.Windows.Forms.Button btnBack;
     }
 }

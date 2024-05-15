@@ -10,7 +10,7 @@ namespace Eco_Bicycle_for_Rent.DataAccess
 {
     public class DataProvider
     {
-        private string connectionString = "Data Source=LAPTOP-C5FN1M76\\NP;Initial Catalog=EcoBicycleForRent;Integrated Security=True";
+        private string connectionString = "Data Source=CUBO\\SQLEXPRESS;Initial Catalog=EcoBicycleForRent;Integrated Security=True";
 
         private DataProvider()
         {

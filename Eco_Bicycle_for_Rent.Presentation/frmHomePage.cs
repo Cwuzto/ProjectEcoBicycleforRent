@@ -27,5 +27,19 @@ namespace Eco_Bicycle_for_Rent.Presentation
         {
             Application.Exit();
         }
+
+        private void btnDangKy_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmDangKy frmDangKy = new frmDangKy();
+            frmDangKy.ShowDialog();
+            this.Close();
+        }
+
+        private void btnTramXeDap_Click(object sender, EventArgs e)
+        {
+            frmDSTramThueXe frmDSTramThueXe = new frmDSTramThueXe();
+            frmDSTramThueXe.ShowDialog();
+        }
     }
 }
