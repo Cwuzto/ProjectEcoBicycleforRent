@@ -15,6 +15,10 @@ namespace Eco_Bicycle_for_Rent.Presentation
         public frmNapTien()
         {
             InitializeComponent();
+
+            // Thêm sự kiện CheckedChanged cho các checkbox
+            cbTienMat.CheckedChanged += new EventHandler(cbTienMat_CheckedChanged);
+            cbNganHang.CheckedChanged += new EventHandler(cbNganHang_CheckedChanged);
         }
 
         private void btnXacNhan_Click(object sender, EventArgs e)
@@ -25,6 +29,22 @@ namespace Eco_Bicycle_for_Rent.Presentation
         private void btnQuayLai_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void cbNganHang_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbNganHang.Checked)
+            {
+                cbTienMat.Checked = false;
+            }
+        }
+
+        private void cbTienMat_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbTienMat.Checked)
+            {
+                cbNganHang.Checked = false;
+            }
         }
     }
 }
