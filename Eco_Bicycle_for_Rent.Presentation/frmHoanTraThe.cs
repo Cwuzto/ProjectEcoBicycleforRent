@@ -20,6 +20,7 @@ namespace Eco_Bicycle_for_Rent.Presentation
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Đăng ký thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
