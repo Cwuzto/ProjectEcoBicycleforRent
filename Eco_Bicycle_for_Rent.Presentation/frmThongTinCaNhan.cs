@@ -59,5 +59,10 @@ namespace Eco_Bicycle_for_Rent.Presentation
             frmKhachHang.ShowDialog();
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Xác nhận thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

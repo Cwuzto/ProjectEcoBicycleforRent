@@ -232,10 +232,11 @@
             this.button1.Font = new System.Drawing.Font("Montserrat SemiBold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(666, 338);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(189, 67);
+            this.button1.Size = new System.Drawing.Size(253, 67);
             this.button1.TabIndex = 60;
             this.button1.Text = "Xác nhận";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmThongTinCaNhan
             // 
