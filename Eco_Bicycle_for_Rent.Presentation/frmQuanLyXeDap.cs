@@ -22,6 +22,7 @@ namespace Eco_Bicycle_for_Rent.Presentation
         private void frmQuanLyXeDap_Load(object sender, EventArgs e)
         {
             dgvDS.DataSource = xeBus.LayDSXeDap();
+            dgvDS.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             cmbLoaiXe.DataSource = xeBus.GetDSLoaiXe();
             cmbLoaiXe.DisplayMember = "TenLoai";
             cmbLoaiXe.ValueMember = "MaLX";
